@@ -15,7 +15,7 @@ sources:
          #- adium.yml
          #- alfred.yml
          #- better-touch-tool.yml
-         - chrome.yml
+         - chrome-stable.yml
          #- chrome-beta.yml
          - dropbox.yml
          #- github.yml
