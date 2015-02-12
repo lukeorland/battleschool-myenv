@@ -1,0 +1,16 @@
+---
+
+- name: Clone dotvim repo
+  git:
+    repo: ssh://git@github.com:lukeorland/dotvim-plain.git
+    dest: ~/.vim
+    version: master
+
+- name: Symlink .vimrc and .gvimrc
+  file:
+    src: ~/.vim/{{ item }}
+    path: ~/.{{ item }}
+    state: link
+  with_items:
+    - vimrc
+    - gvimrc

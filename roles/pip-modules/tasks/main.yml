@@ -1,0 +1,10 @@
+---
+
+- name: Useful tools from pip
+  pip:
+    name: "{{item}}"
+    state: latest
+  with_items:
+    - virtualenv
+    - virtualenvwrapper
+    - setuptools

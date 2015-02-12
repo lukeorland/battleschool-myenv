@@ -1,0 +1,43 @@
+---
+
+sources:
+  #local:
+  #  - playbook.yml
+
+  #url:
+  #  - name: playbook.yml
+  #    url: https://db.tt/VcyI9dvr
+
+  git:
+    - name: osx
+      repo: https://github.com/spencergibb/ansible-osx
+      playbooks:
+         #- adium.yml
+         #- alfred.yml
+         #- better-touch-tool.yml
+         - chrome.yml
+         #- chrome-beta.yml
+         - dropbox.yml
+         #- github.yml
+         - homebrew.yml   # must come before any use of homebrew module
+         #- intellij-idea-ultimate.yml
+         #- intellij-idea-ultimate13.yml
+         - iterm2.yml
+         #- java6.yml
+         - java7.yml
+         #- libreoffice.yml
+         #- macports.yml  # must come before any use of macports module
+         #- macvim.yml
+         #- sequel-pro.yml
+         - skype.yml
+         - truecrypt.yml
+         - usb-overdrive.yml
+         - virtualbox.yml
+         - vagrant.yml
+         - virtualbox.yml
+         #- xtra-finder.yml
+
+    - name: my-env
+      repo: https://github.com/spencergibb/ansible-osx
+      playbooks:
+        - playbook-mac.yml

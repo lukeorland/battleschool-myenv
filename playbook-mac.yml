@@ -1,0 +1,41 @@
+---
+
+- hosts: workstation
+  sudo: yes
+  roles:
+    - pip
+    - pip-modules
+    - dotfiles
+    #- TODO: osx-config
+    #- TODO: oh-my-zsh
+    #- TODO: gitconfig
+
+  tasks:
+
+    #- name: Homebrew taps
+    #  homebrew_tap: tap={{item}} state=present
+    #  with_items:
+    #    # https://github.com/gapple/homebrew-services
+    #    - gapple/services
+
+    - name: Apps from homebrew
+      homebrew: name={{item}} state=present update_homebrew=yes
+      with_items:
+          - coreutils
+          - git
+          #- node
+          #- maven
+          #- rbenv
+          - dos2unix
+          #- ruby
+          #- tomcat
+          - wget
+          - ctags
+          #- dnsmasq
+          #- httpi
+
+    ## requires node/npm from above
+    #- name: install global apps from npm
+    #  npm: name={{item}} global=yes
+    #  with_items:
+    #    - grunt-cli

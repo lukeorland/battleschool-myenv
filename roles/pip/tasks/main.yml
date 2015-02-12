@@ -1,0 +1,15 @@
+---
+
+- name: A pip is installed
+  command: which pip
+  register: which_pip
+  failed_when: no
+  changed_when: which_pip.rc != 0
+  notify:
+    - get get-pip.py
+    - run get-pip.py
+
+- name: Latest pip
+  pip:
+    name: pip
+    state: latest
