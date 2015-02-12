@@ -38,6 +38,6 @@ sources:
          #- xtra-finder.yml
 
     - name: my-env
-      repo: 'https://github.com/spencergibb/ansible-osx'
+      repo: 'https://github.com/lukeorland/battleschool-myenv'
       playbooks:
         - playbook-mac.yml
