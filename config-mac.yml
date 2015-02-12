@@ -10,7 +10,7 @@ sources:
 
   git:
     - name: osx
-      repo: https://github.com/spencergibb/ansible-osx
+      repo: 'https://github.com/spencergibb/ansible-osx'
       playbooks:
          #- adium.yml
          #- alfred.yml
@@ -38,6 +38,6 @@ sources:
          #- xtra-finder.yml
 
     - name: my-env
-      repo: https://github.com/spencergibb/ansible-osx
+      repo: 'https://github.com/spencergibb/ansible-osx'
       playbooks:
         - playbook-mac.yml

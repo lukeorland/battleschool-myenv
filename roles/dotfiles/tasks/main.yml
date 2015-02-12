@@ -2,7 +2,7 @@
 
 - name: Clone dotvim repo
   git:
-    repo: ssh://git@github.com:lukeorland/dotvim-plain.git
+    repo: 'ssh://git@github.com:lukeorland/dotvim-plain.git'
     dest: ~/.vim
     version: master
 
