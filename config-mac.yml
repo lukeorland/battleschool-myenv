@@ -1,4 +1,5 @@
 ---
+cache_dir: ~/Library/Caches/battleschool
 
 sources:
   #local:
