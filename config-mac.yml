@@ -2,12 +2,12 @@
 cache_dir: ~/Library/Caches/battleschool
 
 sources:
-  #local:
-  #  - playbook.yml
+#local:
+#  - playbook.yml
 
-  #url:
-  #  - name: playbook.yml
-  #    url: https://db.tt/VcyI9dvr
+#url:
+#  - name: playbook.yml
+#    url: https://db.tt/VcyI9dvr
 
   git:
     - name: osx
