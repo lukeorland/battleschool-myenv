@@ -33,6 +33,7 @@
           - ctags
           #- dnsmasq
           #- httpi
+      sudo: no
 
     ## requires node/npm from above
     #- name: install global apps from npm
